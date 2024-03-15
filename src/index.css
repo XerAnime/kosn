@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --font-family: "Poppins", sans-serif !important;
+  line-height: 1.5;
+  font-weight: 400;
+
+  scroll-behavior: smooth;
+
+  --primary-color: #ff4d4d;
+  --secondary-color: #33cc99;
+  --primary-background-color: #222222;
+  --accent-color: #ffd700;
+  --text-color: #d3d3d3;
+  --link-color: #33cc99;
+  --link-hover-color: #66ffcc;
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    position: -webkit-sticky;
+    position: sticky;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    height: 500px;
+    scrollbar-width: thin;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 2px;
+    /* margin: 10px 5px; */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #191919;
+    scrollbar-width: thin;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(
+      --link-hover-color
+    ) !important; /* Color of the thumb on hover */
+  }
+}
+
+* {
+  font-family: var(--font-family);
+}
